@@ -1,0 +1,70 @@
+html, body {
+    font-size: 0;
+    line-height: 0;
+}
+
+@font-face {
+    font-family: spongebobFont;
+    src: url("../Krabby Patty.ttf");
+}
+
+@media only screen and (max-width: 600px) {
+    html {
+        background: url(../img/bg2.png) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    html {
+        background: url(../img/bg.jpg) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+}
+
+img {
+    background: #eee 50% 50% no-repeat;
+    background-size: cover;
+
+    display: block;
+
+    height: auto;
+
+    border: 30px solid transparent;
+    padding: 5px;
+    margin: 60px;
+
+    border-radius: 7px 7px 7px 7px;
+    -moz-border-radius: 7px 7px 7px 7px;
+    -webkit-border-radius: 7px 7px 7px 7px;
+    -webkit-box-shadow: 0px 0px 60px -9px rgba(0,0,0,1);
+    -moz-box-shadow: 0px 0px 60px -9px rgba(0,0,0,1);
+    box-shadow: 0px 0px 60px -9px rgba(0,0,0,1);
+
+    border-image: url(../img/gold1.jpg) 18% round;
+}
+
+#owl-demo img {
+    display: block;
+    width: 35%;
+    height: auto;
+}
+
+.owl-item {
+    display: flex;
+    justify-content: center;
+}
+
+#hbd-text, #error-text {
+    font-family: spongebobFont, serif;
+    font-size: 35px;
+    color: #fff56c;
+    text-align: center;
+    padding-top: 30px;
+}
