@@ -55,6 +55,7 @@ img {
     display: block;
     width: 35%;
     object-fit: contain;
+    align-self: center;
 }
 
 .owl-item {
