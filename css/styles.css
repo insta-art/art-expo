@@ -32,10 +32,6 @@ img {
     background: #eee 50% 50% no-repeat;
     background-size: cover;
 
-    display: block;
-
-    height: auto;
-
     border: 30px solid transparent;
     padding: 5px;
     margin: 60px;
@@ -48,12 +44,12 @@ img {
     box-shadow: 0px 0px 60px -9px rgba(0,0,0,1);
 
     border-image: url(../img/gold1.jpg) 18% round;
+    -webkit-border-image:url(../img/gold1.jpg) 18% round;
 }
 
 #owl-demo img {
     display: block;
     width: 35%;
-    height: auto;
 }
 
 .owl-item {
