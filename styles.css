@@ -53,8 +53,8 @@ img {
 }
 
 .owl-item {
-    display: flex;
-    justify-content: center;
+    /*display: flex;
+    justify-content: center;*/
 }
 
 #hbd-text, #error-text {
