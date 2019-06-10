@@ -70,7 +70,11 @@ img {
     color: #fff56c;
     text-align: center;
     padding-top: 30px;
-    line-height: 0;
+}
+
+.hbd-text {
+    line-height: 1;
+    margin-bottom: 3px;
 }
 
 .footer-text {
