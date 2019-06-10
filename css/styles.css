@@ -49,12 +49,14 @@ img {
 
 #owl-demo img {
     display: block;
-    width: 35%;
+    max-width: 35%;
+    object-fit: contain;
 }
 
 .owl-item {
     display: flex;
     justify-content: center;
+    align-items: flex-start;
 }
 
 #hbd-text, #error-text {
