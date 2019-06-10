@@ -1,5 +1,5 @@
-$("#hbd-text").hide();
-$("#error-text").hide();
+
+console.log("adsf");
 
 var hasDragged = false;
 
@@ -8,14 +8,22 @@ $(document).ready(function () {
     var name = getUrlParameter("user");
     console.log(name);
 
-    if (name === undefined) {
+    if (name == undefined) {
         name = "_artbylexi_";
     } else {
         name = name.toLowerCase();
     }
 
-    if (name == "_artbylexi_" || name == "_photosbylexi_") {
-        $("#hbd-text").show();
+    console.log(name);
+    if (name === "_artbylexi_" || name === "_photosbylexi_") {
+        console.log("showign");
+        $(".hbd-text").show();
+        $(".footer-text").show();
+    }
+    else {
+        $(".hbd-text").hide();
+        $(".footer-text").hide();
+        $("#error-text").hide();
     }
 
     var idReq = $.get("https://images" + ~~(Math.random() * 33) + "-focus-opensocial.googleusercontent.com/gadgets/proxy?container=none&url=https://www.instagram.com/" + name + "/", function(html) {
@@ -68,7 +76,7 @@ $(document).ready(function () {
                     center: true,
                     loop: true,
                     onDragged: dragFinished,
-                    onDrag: dragStarted
+                    onDrag: dragStarted,
                 });
 
                 owl.owlCarousel();
@@ -155,7 +163,7 @@ var getUrlParameter = function getUrlParameter(sParam) {
 };
 
 function showError(errorText) {
-    $("#hbd-text").hide();
+    $(".hbd-text").hide();
     var error = $("#error-text").show();
     error.text(errorText);
 }
