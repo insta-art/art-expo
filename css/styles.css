@@ -64,10 +64,23 @@ img {
     align-items: flex-start;
 }
 
-#hbd-text, #error-text {
+.hbd-text, .footer-text, #error-text {
     font-family: spongebobFont, serif;
-    font-size: 35px;
+    font-size: 30px;
     color: #fff56c;
     text-align: center;
     padding-top: 30px;
+    line-height: 0;
+}
+
+.footer-text {
+    padding-top: 5px;
+    color: #f24333;
+    font-size:15px;
+    line-height: 1;
+}
+
+#instr {
+    font-size: 13px;
+    color: #26b9c8;
 }
