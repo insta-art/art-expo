@@ -75,8 +75,7 @@ $(document).ready(function () {
                     items: 1,
                     center: true,
                     loop: true,
-                    onDragged: dragFinished,
-                    onDrag: dragStarted,
+                    dragBeforeAnimFinish: false
                 });
 
                 owl.owlCarousel();
