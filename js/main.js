@@ -75,7 +75,9 @@ $(document).ready(function () {
                     items: 1,
                     center: true,
                     loop: true,
-                    dragBeforeAnimFinish: false
+                    autoplay:true,
+                    autoplayTimeout:5000,
+                    autoplayHoverPause:false
                 });
 
                 owl.owlCarousel();
